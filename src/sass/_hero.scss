@@ -1,0 +1,136 @@
+.hero_section{
+    height: 86vh;
+    background-image: url(https://a0.muscache.com/im/pictures/5998210c-3dd8-456a-8805-2a044ede1d5e.jpg?im_w=1200);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+    .hero_container{
+        position: relative;
+        width: 1250px;
+        height: auto;
+        padding-top: 80px;
+        margin-bottom: 40px;
+        display: flex;
+        .hero_container{
+            height: auto;
+        }
+        
+        .form_container{
+            background-color: white;
+            border-radius: 12px;
+            padding: 32px;
+            width: 510px;
+            .form_title{
+                h1{
+                    font-size: 2rem;
+                    margin: 0;
+                }
+                p{
+                    font-size: 16px;
+                    color: #767676;
+                }
+            }
+        }
+    }
+}
+.hero_wrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.hero_discount{
+    background-color: white;
+    border-radius: 12px;
+    padding:32px;
+    width: 510px;
+    height: 36px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    p{
+        padding-right: 16px;
+    }
+    .become_host{
+        border-left: 1px solid;
+        padding-left: 40px;
+        p{
+            white-space: nowrap;
+            text-decoration: underline;
+        }
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+    .input_wrap{
+        display: flex;
+        width: 100%;
+        position: relative;
+        .input_con{
+            box-shadow: #DDDDDD 0 0 0 1px inset;
+            border-radius: 8px;
+            padding: 8px 16px;
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            &:not(:last-child)
+            {
+                margin-right: 7px;
+            }
+        }
+    }
+}
+label{
+    font-size: 10px;
+    font-weight: 600;
+}
+input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+  
+}
+select{
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.btnsearch{
+    width: 100%;
+   background-image: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%); 
+   padding: 14px 24px;
+   text-align: center;
+   color: #ffffff;
+   border-radius: 8px;
+   border: none;
+   outline: none;
+   margin-top: 10px;
+}
+
+
+//media
+@media screen and (max-width: 744px){
+    .form_container,.hero_discount{
+        width: 100%!important
+    }
+    .hero_section{
+        .hero_container{
+            background-color: white;
+            margin-bottom: 0;
+        }
+    }
+    .hero_discount{
+        margin: 0;
+    }
+    .form_title{
+        h1{
+            font-size: 1.625rem;
+
+        }
+       
+}
+}
